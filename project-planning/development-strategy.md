@@ -74,13 +74,27 @@ __As a user I want to be able to add todos__
 
 ### HTML
 
+- Add `div` with id root
+
 ### CSS
 
 ### JS
 
 #### Listener
 
+- Add a listener to button Add Todo
+
 #### Handler
+
+- Add addTodoHandler
+
+#### Class
+
+- Add Todo class
+
+#### Data
+
+- Update db.json via testing
 
 ---
 
