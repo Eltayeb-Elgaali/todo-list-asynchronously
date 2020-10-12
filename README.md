@@ -1,6 +1,4 @@
-> Head over to [INSTRUCTIONS.md](./INSTRUCTIONS.md)
-
-> The README is empty because you'll need to fill it out
+> [INSTRUCTIONS.md](./INSTRUCTIONS.md)
 
 # To DO List
 
@@ -46,7 +44,18 @@ There are several ways to run this run this project. one of them is to install L
 
 Examples of usage:
 
-`come later`
+` try {
+            const res = await fetch(`/todos/${id}`, {
+                method: 'PATCH',
+                body: JSON.stringify(edited),
+                headers: {
+                    "Content-type": "application/json; charset=UTF-8"
+                }
+            });
+            return await res.json();
+        } catch (err) {
+            console.log(err);
+        };`
 
 ## Features
 
@@ -64,7 +73,7 @@ To-do list:
 
 ## Status
 
-Project is: _first phase finished_
+Project is: _finished_
 
 ## Inspiration
 

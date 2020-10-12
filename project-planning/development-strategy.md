@@ -200,5 +200,8 @@ __As a user I want to be to able delete a specific todo from the list__
 
 #### Listener
 
+- Add a listener to button Delete todo
+
 #### Handler
 
+- Add DeleteHandler
