@@ -1,7 +1,7 @@
 {
   "todos": [
     {
-      "todoText": "new todo",
+      "todoText": "eltayeb",
       "completed": false,
       "id": 1
     },
@@ -10,7 +10,7 @@
       "id": 2
     },
     {
-      "todoText": "third todo",
+      "todoText": "motena hhyf",
       "completed": true,
       "id": 3
     },
@@ -21,7 +21,7 @@
     },
     {
       "completed": true,
-      "todoText": "1c67",
+      "todoText": "text test ",
       "id": 6
     },
     {
