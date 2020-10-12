@@ -6,8 +6,14 @@ export const addTodoHandler = async (target) => {
         completed: target.currentTarget.form.completed.checked
     });
 
-    const view = await newTodo.postTodo(newTodo);
-    const renderedTodo = newTodo.renderTodo(view);
+    const todoData = await newTodo.postTodo(newTodo);
+    console.log({
+        action: 'Add todo',
+        todo: todoData,
+        event: target
+    });
+    const renderedTodo = newTodo.renderTodo(todoData);
+    document.querySelector('#root').innerHTML = '';
     document.querySelector('#root').appendChild(renderedTodo);
 
     
