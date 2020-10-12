@@ -32,6 +32,17 @@ export class Todo {
             console.log(err);
         }
     }
+
+    getOneTodo = async (id) => {
+        try {
+            const res = await fetch(`/todos/${id}`);
+            return await res.json();
+        } catch (err) {
+            console.log(err);
+        };
+    }
+
+
     renderTodo = (todo) =>{
         const container = document.createElement('div');
         container.id = `todo-${todo.id}`;
