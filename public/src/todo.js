@@ -58,6 +58,17 @@ export class Todo {
         };
     }
 
+    deleteTodo = async (id) =>{
+        try {
+            const res = await fetch(`/todos/${id}`, {
+                method: 'DELETE'
+            });
+           return await res.json();
+        } catch (err) {
+            console.log(err);
+        };
+    }
+
     renderTodo = (todo) =>{
         const container = document.createElement('div');
         container.id = `todo-${todo.id}`;
