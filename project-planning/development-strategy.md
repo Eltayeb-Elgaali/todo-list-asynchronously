@@ -173,7 +173,11 @@ __As a user I want to be able to update a specific todo__
 
 #### Listener
 
+- Add a listener to button Edit Todo
+
 #### Handler
+
+- Add editHandler
 
 ---
 
