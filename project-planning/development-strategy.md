@@ -138,13 +138,19 @@ __As a user I want to be able to retrieve a specifiec todo__
 
 ### HTML
 
+- Add text input
+
 ### CSS
 
 ### JS
 
 #### Listener
 
+- Add a listener to button Get Todo
+
 #### Handler
+
+- Add getOneTodoHandler
 
 ---
 
