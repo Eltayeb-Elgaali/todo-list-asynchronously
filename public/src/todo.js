@@ -23,6 +23,15 @@ export class Todo {
         };
     }
 
+
+    getAll = async () => {
+        try{
+            const res = await fetch('/todos');
+            return await res.json();
+        } catch (err) {
+            console.log(err);
+        }
+    }
     renderTodo = (todo) =>{
         const container = document.createElement('div');
         container.id = `todo-${todo.id}`;
@@ -37,5 +46,17 @@ export class Todo {
         container.appendChild(titleEl);
 
         return container;
+    }
+
+    renderTodos = (todos) => {
+        const ulEl = document.createElement('ul');
+        todos.map(todo => {
+            const liEl = document.createElement('li');
+            liEl.id = todo.id;
+            liEl.innerHTML = todo.todoText;
+            ulEl.appendChild(liEl);
+        });
+
+        return ulEl;
     }
 }

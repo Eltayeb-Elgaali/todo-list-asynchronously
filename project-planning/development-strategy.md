@@ -117,7 +117,11 @@ __As a user I want to be able to retrieve all todos__
 
 #### Listener
 
+- Add a listener to button Get All Todos
+
 #### Handler
+
+- Add getAllTodosHandler
 
 ---
 
