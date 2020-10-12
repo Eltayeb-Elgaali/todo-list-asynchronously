@@ -43,6 +43,21 @@ export class Todo {
     }
 
 
+    editTodo = async (id, edited) => {
+        try {
+            const res = await fetch(`/todos/${id}`, {
+                method: 'PATCH',
+                body: JSON.stringify(edited),
+                headers: {
+                    "Content-type": "application/json; charset=UTF-8"
+                }
+            });
+            return await res.json();
+        } catch (err) {
+            console.log(err);
+        };
+    }
+
     renderTodo = (todo) =>{
         const container = document.createElement('div');
         container.id = `todo-${todo.id}`;
