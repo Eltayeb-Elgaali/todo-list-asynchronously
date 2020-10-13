@@ -4,7 +4,7 @@
   "description": "",
   "main": "",
   "scripts": {
-    "start": "npm server.js"
+    "start": "node server.js"
   },
   "author": "@hackyourfuturebelgium",
   "license": "CC BY-SA",
