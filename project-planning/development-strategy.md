@@ -183,7 +183,7 @@ __As a user I want to be able to update a specific todo__
 
 ## 6. Delete To Do
 
-__As a user I want to be to able delete a specific todo from the list__
+__As a user I want to be able to delete a specific todo from the list__
 
 - __When the user click on delete todo button this todo will be removed__
 
@@ -205,3 +205,15 @@ __As a user I want to be to able delete a specific todo from the list__
 #### Handler
 
 - Add DeleteHandler
+
+---
+
+## 7. Deploy
+
+__As a user I want to be able to browse the website from everywhere__
+
+
+### REPO
+
+- This user story is developed on branch `deploy`.
+- This branch is merged to `master` branch after completion.
